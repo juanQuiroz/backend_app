@@ -1,0 +1,28 @@
+{
+  "name": "backend_app",
+  "version": "1.0.0",
+  "description": "Modulo 2 - Curso actualizacion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js --exec babel-node",
+    "build": "babel src --out-dir build",
+    "start": "node build/index.js"
+  },
+  "author": "Kevin",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.12",
+    "@babel/node": "^7.17.10",
+    "@babel/preset-env": "^7.17.12",
+    "nodemon": "^2.0.16"
+  }
+}
