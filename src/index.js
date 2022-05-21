@@ -1,5 +1,5 @@
 import app from './app'
-
+import './database'
 
 //configure port
 app.set('port', process.env.PORT || 3000);
