@@ -6,7 +6,11 @@ const ownerSchema = new Schema({
     lastname: String,
     address: String,
     phone: String,
-    email: String
+    email: String,
+    vehicle: { 
+        type: Schema.Types.ObjectId,
+        ref: "vehicle"
+    },
 }, {
     timestamps: true,
     versionKey: false

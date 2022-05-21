@@ -2,9 +2,9 @@ import Owner from '../models/owner'
 
 export const createOwner = async (req,res) => {
     
-    const {dni,name,lastaname,address,email,phone} = req.body;
+    const {dni,name,lastaname,address,email,phone,vehicle} = req.body;
     
-    const newOwner = new Owner({dni,name,lastaname,address,email,phone});
+    const newOwner = new Owner({dni,name,lastaname,address,email,phone,vehicle});
     const ownerSaved = await newOwner.save();
 
     res.status(201).json(ownerSaved);
@@ -35,6 +35,6 @@ export const updateOwnerById = async (req,res) => {
 export const deleteOwnerById = async (req,res) => {
     const{ownerId} = req.params;
     await Owner.findByIdAndRemove(ownerId)
-    res.status(204).json({message:'Delete owner'})
+    res.status(204).json()
     console.log("Deleting owner")
 }

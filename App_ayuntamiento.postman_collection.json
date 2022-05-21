@@ -93,7 +93,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/api/vehicle/628860b97f6077c6946f3a8d",
+							"raw": "http://localhost:3000/api/vehicle/62886b482031d05a3e4177b4",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -102,7 +102,7 @@
 							"path": [
 								"api",
 								"vehicle",
-								"628860b97f6077c6946f3a8d"
+								"62886b482031d05a3e4177b4"
 							]
 						}
 					},
@@ -114,12 +114,12 @@
 			"name": "Owner",
 			"item": [
 				{
-					"name": "http://localhost:3000/api/vehicle",
+					"name": "http://localhost:3000/api/owner",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/api/vehicle",
+							"raw": "http://localhost:3000/api/owner",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -127,20 +127,20 @@
 							"port": "3000",
 							"path": [
 								"api",
-								"vehicle"
+								"owner"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/api/vehicle",
+					"name": "http://localhost:3000/api/owner",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"placa\": \"EYR-785\",\n    \"marca\": \"HYUNDAY\",\n    \"modelo\": \"ACCENT\"\n}",
+							"raw": "{\n    \"dni\": \"77167125\",\n    \"name\": \"Kevin\",\n    \"lastname\": \"Joseph\",\n    \"address\": \"Punta Hermosa\",\n    \"email\": \"kevin@gmail.com\",\n    \"phone\": \"999777888\",\n    \"vehicle\": \"62885f058c010a7eb9d21087\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -148,7 +148,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/vehicle",
+							"raw": "http://localhost:3000/api/owner",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -156,20 +156,20 @@
 							"port": "3000",
 							"path": [
 								"api",
-								"vehicle"
+								"owner"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/api/vehicle/62885f058c010a7eb9d21087",
+					"name": "http://localhost:3000/api/pwner/:id",
 					"request": {
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"placa\": \"EYR-777\",\n    \"marca\": \"HYUNDAY\",\n    \"modelo\": \"ACCENT\"\n}",
+							"raw": "{\n    \"dni\": \"77167125\",\n    \"name\": \"Kevin\",\n    \"lastname\": \"Joseph\",\n    \"address\": \"Punta Hermosa\",\n    \"phone\": \"999777888\",\n    \"email\": \"kevin95@gmail.com\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -177,7 +177,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/vehicle/62885f058c010a7eb9d21087",
+							"raw": "http://localhost:3000/api/owner/62886b582031d05a3e4177b6",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -185,20 +185,20 @@
 							"port": "3000",
 							"path": [
 								"api",
-								"vehicle",
-								"62885f058c010a7eb9d21087"
+								"owner",
+								"62886b582031d05a3e4177b6"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/api/vehicle/628860b97f6077c6946f3a8d",
+					"name": "http://localhost:3000/api/owner/:id",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/api/vehicle/628860b97f6077c6946f3a8d",
+							"raw": "http://localhost:3000/api/owner/62891913338919f3faa7202e",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -206,8 +206,8 @@
 							"port": "3000",
 							"path": [
 								"api",
-								"vehicle",
-								"628860b97f6077c6946f3a8d"
+								"owner",
+								"62891913338919f3faa7202e"
 							]
 						}
 					},
