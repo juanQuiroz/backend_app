@@ -1,4 +1,4 @@
-import Owner from '../models/owner'
+import Owner from '../models/Owner'
 
 export const createOwner = async (req,res) => {
     
@@ -12,7 +12,7 @@ export const createOwner = async (req,res) => {
 }
 
 export const getOwner = async (req,res) => {
-    const owner = await Owner.find();
+    const owner = await Owner.find().populate("vehicle");
     res.json(owner);
     console.log("Get all owner: ", owner)
 }

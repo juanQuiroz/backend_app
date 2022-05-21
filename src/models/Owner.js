@@ -9,7 +9,7 @@ const ownerSchema = new Schema({
     email: String,
     vehicle: { 
         type: Schema.Types.ObjectId,
-        ref: "vehicle"
+        ref: "Vehicle"
     },
 }, {
     timestamps: true,
