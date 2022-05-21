@@ -3,6 +3,7 @@ import morgan from "morgan";
 import cors from "cors";
 
 import vehicleRoute from './routes/vehicle.routes'
+import ownerRoute from './routes/owner.routes'
 
 const app = express();
 app.use(cors());
@@ -17,4 +18,5 @@ app.get("/", (req, res) => {
 });
 
 app.use('/api/vehicle',vehicleRoute)
+app.use('/api/owner',ownerRoute)
 export default app;

@@ -12,7 +12,6 @@ export const createVehicle = async (req,res) => {
 }
 
 export const getVehicle = async (req,res) => {
-    console.log("controller")
     const vehicle = await Vehicle.find();
     res.json(vehicle);
     console.log("Get all vehicle: ", vehicle)
