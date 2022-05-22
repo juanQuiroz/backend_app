@@ -41,8 +41,12 @@ export const deleteOwnerById = async (req,res) => {
 }
 
 export const getOwnerAndPayment = async (req,res) => {
-    console.log("fjejeje")
-    const payment = await Payment.find().populate("taxe").populate("owner");
+    const payment = await Payment.find().populate("taxe").populate({
+        path    : 'owner',
+        populate: [
+            { path: 'vehicle' },
+        ]
+   });
     res.json(payment);
     console.log("Get all Owner and Payment: ",payment)
 }
