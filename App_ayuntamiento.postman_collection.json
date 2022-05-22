@@ -225,6 +225,28 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/owner/all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/owner/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"owner",
+								"all"
+							]
+						},
+						"description": "owner and payment"
+					},
+					"response": []
 				}
 			]
 		},
@@ -258,7 +280,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"amount\": \"100\",\n    \"type_taxe\": \"Vehicular\",\n    \"month\": \"Enero\",\n    \"fee\": \"100\"\n}",
+							"raw": "{\n    \"type_taxe\": \"Vehicular\",\n    \"month\": \"Enero\",\n    \"fee\": \"100\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -287,7 +309,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"amount\": \"100\",\n    \"type_taxe\": \"Vehicular\",\n    \"month\": \"Enero\",\n    \"fee\": \"100\",\n    \"_id\": \"628995707d9a49c485d27cb2\",\n    \"createdAt\": \"2022-05-22T01:44:16.274Z\",\n    \"updatedAt\": \"2022-05-22T01:44:16.274Z\"\n}",
+							"raw": "{\n    \"type_taxe\": \"Vehicular\",\n    \"month\": \"Enero\",\n    \"fee\": \"100\",\n    \"_id\": \"628995707d9a49c485d27cb2\",\n    \"createdAt\": \"2022-05-22T01:44:16.274Z\",\n    \"updatedAt\": \"2022-05-22T01:44:16.274Z\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"

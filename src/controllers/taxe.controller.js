@@ -2,9 +2,9 @@ import Taxe from '../models/Taxe'
 
 export const createTaxe = async (req,res) => {
     
-    const {amount,type_taxe,month,fee} = req.body;
+    const {type_taxe,month,fee} = req.body;
     
-    const newTaxe = new Taxe({amount,type_taxe,month,fee});
+    const newTaxe = new Taxe({type_taxe,month,fee});
     const taxeSaved = await newTaxe.save();
 
     res.status(201).json(taxeSaved);
