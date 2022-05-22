@@ -390,7 +390,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"pay_date\": \"01-01-2020\",\n    \"amount\": \"100\",\n    \"taxe\": \"62893bc0d5db3a86fccf3a21\",\n    \"owner\": \"6289179e338919f3faa72019\"\n}",
+							"raw": "{\n    \"pay_date\": \"01-01-2020\",\n    \"amount\": \"100\",\n    \"taxe\": \"62899ecc1a741ebe699f263e\",\n    \"owner\": \"628987b8cba0af0f436d41e0\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -500,7 +500,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"receipt_date\": \"01-01-2020\",\n    \"payment\": \"6289971a218c6d17ee51b65a\",\n    \"user\": \"user\",\n    \"enity\": \"sede principal\"\n}",
+							"raw": "{\n    \"receipt_date\": \"01-01-2020\",\n    \"payment\": \"62899ffee9d1799c998f1624\",\n    \"user\": \"user\",\n    \"enity\": \"sede principal\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
