@@ -18,7 +18,7 @@ export const getTaxe = async (req,res) => {
 }
 
 export const getTaxeById = async (req,res) => {
-    const taxe = await taxe.findById(req.params.taxeId);
+    const taxe = await Taxe.findById(req.params.taxeId);
     res.status(200).json(taxe)
     console.log("Get taxe by id: ", taxe)
 }

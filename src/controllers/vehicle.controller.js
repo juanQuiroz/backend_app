@@ -18,7 +18,7 @@ export const getVehicle = async (req,res) => {
 }
 
 export const getVehicleById = async (req,res) => {
-    const vehicle = await vehicle.findById(req.params.vehicleId);
+    const vehicle = await Vehicle.findById(req.params.vehicleId);
     res.status(200).json(vehicle)
     console.log("Get vehicle by id: ", vehicle)
 }

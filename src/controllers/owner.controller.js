@@ -18,7 +18,7 @@ export const getOwner = async (req,res) => {
 }
 
 export const getOwnerById = async (req,res) => {
-    const owner = await owner.findById(req.params.ownerId);
+    const owner = await Owner.findById(req.params.ownerId);
     res.status(200).json(owner)
     console.log("Get owner by id: ", owner)
 }
