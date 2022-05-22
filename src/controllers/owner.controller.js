@@ -2,9 +2,9 @@ import Owner from '../models/Owner'
 
 export const createOwner = async (req,res) => {
     
-    const {dni,name,lastaname,address,email,phone,vehicle} = req.body;
+    const {dni,name,lastaname,address,email,phone,vehicle,domiciliado} = req.body;
     
-    const newOwner = new Owner({dni,name,lastaname,address,email,phone,vehicle});
+    const newOwner = new Owner({dni,name,lastaname,address,email,phone,vehicle,domiciliado});
     const ownerSaved = await newOwner.save();
 
     res.status(201).json(ownerSaved);
