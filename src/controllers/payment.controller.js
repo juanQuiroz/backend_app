@@ -2,9 +2,9 @@ import Payment from '../models/Payment'
 
 export const createPayment = async (req,res) => {
     
-    const {pay_date,amount,taxe,owner} = req.body;
+    const {state,pay_date,amount,taxe,owner} = req.body;
     
-    const newPayment = new Payment({pay_date,amount,taxe,owner});
+    const newPayment = new Payment({state,pay_date,amount,taxe,owner});
     const paymentSaved = await newPayment.save();
 
     res.status(201).json(paymentSaved);

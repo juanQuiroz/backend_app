@@ -1,6 +1,7 @@
 import {Schema, model} from 'mongoose'
 
 const paymentSchema = new Schema({
+    state: Boolean,
     pay_date: String,
     amount: String,
     taxe: { 
