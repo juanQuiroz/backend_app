@@ -2,9 +2,9 @@ import Taxe from '../models/Taxe'
 
 export const createTaxe = async (req,res) => {
     
-    const {amount,pay_date,month,owner} = req.body;
+    const {amount,type_taxe,month,fee} = req.body;
     
-    const newTaxe = new Taxe({amount,pay_date,month,owner});
+    const newTaxe = new Taxe({amount,type_taxe,month,fee});
     const taxeSaved = await newTaxe.save();
 
     res.status(201).json(taxeSaved);
@@ -12,7 +12,7 @@ export const createTaxe = async (req,res) => {
 }
 
 export const getTaxe = async (req,res) => {
-    const taxe = await Taxe.find().populate("owner");
+    const taxe = await Taxe.find();
     res.json(taxe);
     console.log("Get all taxes: ", taxe)
 }

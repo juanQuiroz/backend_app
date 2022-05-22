@@ -2,12 +2,9 @@ import {Schema, model} from 'mongoose'
 
 const taxeSchema = new Schema({
     amount: String,
-    pay_date: String,
+    type_taxe: String,
     month: String,
-    owner: { 
-        type: Schema.Types.ObjectId,
-        ref: "Owner"
-    }
+    fee: String,
 
 }, {
     timestamps: true,

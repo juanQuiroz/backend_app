@@ -2,9 +2,9 @@ import Payment from '../models/Payment'
 
 export const createPayment = async (req,res) => {
     
-    const {amount,pay_date,month,owner} = req.body;
+    const {pay_date,amount,taxe,owner} = req.body;
     
-    const newPayment = new Payment({amount,pay_date,month,owner});
+    const newPayment = new Payment({pay_date,amount,taxe,owner});
     const paymentSaved = await newPayment.save();
 
     res.status(201).json(paymentSaved);
@@ -12,7 +12,7 @@ export const createPayment = async (req,res) => {
 }
 
 export const getPayment = async (req,res) => {
-    const payment = await Payment.find().populate("taxe");
+    const payment = await Payment.find().populate("taxe").populate("owner");
     res.json(payment);
     console.log("Get all payment: ", payment)
 }
